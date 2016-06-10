@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <title>fx-skew demo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
+    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+
+    <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
+    <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
+
+    <link rel="import" href="../fx-skew.html">
+
+    <style is="custom-style" include="demo-pages-shared-styles">
+        fx-skew { margin: 5rem 0; }
+    </style>
+  </head>
+  <body>
+
+    <div class="vertical-section-container centered">
+      <h3>FX SKEW (demo)</h3>
+      <p>FX Skew gives you a skew effect around your content, but doesn't skew the content. It inherits the background color of it's parent, or you can set a background color property.</p>
+      <demo-snippet>
+        <template>
+          <fx-skew bg="blue">Skew FX! (blue)</fx-skew>
+        </template>
+      </demo-snippet>
+
+      <demo-snippet>
+        <template>
+          <fx-skew bg="yellow">Skew FX! (yellow)</fx-skew>
+        </template>
+      </demo-snippet>
+
+      <demo-snippet>
+        <template>
+          <fx-skew bg="green">Skew FX! (green)</fx-skew>
+        </template>
+      </demo-snippet>
+
+      <demo-snippet>
+        <template>
+          <fx-skew>Skew FX! (default)</fx-skew>
+        </template>
+      </demo-snippet>
+    </div>
+
+  </body>
+</html>

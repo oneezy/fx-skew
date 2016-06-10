@@ -1,0 +1,83 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<dom-module id="fx-skew">
+    <template>
+        <style>
+
+            /* FX Skew */
+            :host {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                position: relative;
+                background: inherit;
+                z-index: 0;
+                text-align: center;
+            }
+
+            /* Background */
+            :host([bg="white"])      { background: rgba(255,255,255, 1); }
+            :host([bg="red"])        { background: rgba(240,98,146,  1); }
+            :host([bg="blue"])       { background: rgba(100,181,246, 1); }
+            :host([bg="purple"])     { background: rgba(123,31,162,  1); }
+            :host([bg="yellow"])     { background: rgba(246,255,40,  1); }
+            :host([bg="green"])      { background: rgba(0,230,118,   1); }
+            :host([bg="white"])      { background: rgba(255,255,255, 1); }
+            :host([bg="black"])      { background: rgba(0,0,0,       1); }
+            :host([bg="gray"])       { background: rgba(70,70,70,    1); }
+
+            /* Color */
+            :host([bg="white"])      { color: rgba(255,255,255, 1); }
+            :host([bg="black"])      { color: rgba(0,0,0,       1); }
+
+            /* Skew Effect */
+            .skew-top {
+                width: 100%;
+                background: inherit;
+                position: absolute;
+                top: -50px; right: 0; bottom: -50px; left: 0;
+                z-index: -1;
+                transform: skewY(2deg);
+                -webkit-backface-visibility: hidden;
+                outline: 1px solid transparent;
+            }
+
+            /* Borders */
+            .skew-top::before {
+                opacity: .3;
+                content: "";
+                display: block;
+                width: 100%;
+                background: inherit;
+                position: absolute;
+                top: -20px; right: 0; bottom: -20px; left: 0;
+                z-index: 0;
+                -webkit-backface-visibility: hidden;
+                outline: 1px solid transparent;
+            }
+        </style>
+
+        <div class="skew-top"></div>
+        <content></content>
+    </template>
+
+    <script>
+        Polymer({
+
+        is: 'fx-skew',
+
+            properties: {
+                bg: {
+                    type: String,
+                    value: 'white',
+                },
+
+                color: {
+                    type: String,
+                    value: 'black',
+                },
+        },
+
+        });
+    </script>
+</dom-module>

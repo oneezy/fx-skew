@@ -1,0 +1,52 @@
+{
+  "name": "fx-skew",
+  "version": "0.0.1",
+  "description": "A skewed div custom element built w/ Polymer. ",
+  "authors": [
+    "Justin O'Neill <justin@oneezy.com>"
+  ],
+  "keywords": [
+    "oneezy",
+    "skew",
+    "fx",
+    "fx-skew",
+    "skew-fx",
+    "css",
+    "design",
+    "custom-elements",
+    "elements",
+    "web",
+    "components",
+    "webcomponents",
+    "web-components",
+    "polymer"
+  ],
+  "main": [
+    "fx-skew.html"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/oneezy/fx-skew.git"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/oneezy/fx-skew",
+  "ignore": [
+    "**/.*",
+    "**/node_modules",
+    "**/bower_components",
+    "**/build",
+    "**/dist",
+    "**/test",
+    "**/tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.5.0"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^1.0.0",
+    "app-layout": "PolymerElements/app-layout#^0.9.0",
+    "web-component-tester": "^4.0.0",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
+  }
+}
