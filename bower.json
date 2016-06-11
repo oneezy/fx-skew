@@ -1,6 +1,6 @@
 {
   "name": "fx-skew",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "description": "A skewed div custom element built w/ Polymer. ",
   "authors": [
     "Justin O'Neill <justin@oneezy.com>"
